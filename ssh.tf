@@ -54,11 +54,11 @@ resource "aws_security_group" "ssh_secure" {
 
 # OUTPUTS
 
-output "security_group_id_https" {
+output "security_group_id_ssh" {
 	value =	"${ aws_security_group.ssh.id }"
 }
 
-output "security_group_id_https_secure" {
+output "security_group_id_ssh_secure" {
 	value =	"${ aws_security_group.ssh_secure.id }"
 }
 
